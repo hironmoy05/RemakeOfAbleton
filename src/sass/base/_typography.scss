@@ -1,0 +1,196 @@
+/* Header  */
+.navigation__list a {
+	font-weight: var(--fw-500);
+}
+
+.primary-header__right .tryFree,
+.primary-header__right .loginRegister,
+.secondary-header__inner a {
+	font-weight: var(--fw-700);
+}
+
+.primary-header__right .tryFree {
+	color: var(--clr-secondary);
+}
+
+.primary-header__right .loginRegister,
+.secondary-header__inner a {
+	line-height: 1.5;
+}
+
+.primary-header__right .loginRegister {
+	font-size: var(--fs-300);
+}
+
+.secondary-header__inner a {
+	font-size: var(--fs-300);
+}
+
+/* Mega Menu */
+.moreOnAbleton,
+.moreFromAbleton {
+	& h3 {
+		font-size: 1.5rem;
+		line-height: 1.5;
+		font-weight: var(--fw-700);
+	}
+
+	& a {
+		font-size: var(--fs-300);
+		line-height: 1.5;
+		color: var(--clr-neutral-300);
+	}
+}
+
+.moreOnAbleton .nav-item:nth-of-type(5) {
+	& a {
+		color: var(--clr-primary);
+	}
+}
+.moreFromAbleton {
+	& a {
+		font-weight: var(--fw-700);
+	}
+
+	& span {
+		display: block;
+		font-size: var(--fs-300);
+		line-height: 1.5;
+		font-weight: var(--fw-500);
+		color: var(--clr-neutral-300);
+	}
+}
+
+@media screen and (min-width: 80em) {
+	.moreOnAbleton,
+	.moreFromAbleton {
+		& h3 {
+			font-size: var(--fs-600);
+			line-height: 1.4;
+		}
+
+		& a {
+			font-size: var(--fs-400);
+			line-height: 1.5;
+		}
+	}
+
+	.moreFromAbleton {
+		& span {
+			font-size: var(--fs-400);
+			line-height: 1.5;
+		}
+	}
+}
+
+/* Hero */
+.hero h1 {
+	font-size: 90px;
+	letter-spacing: 2px;
+	font-weight: var(--fw-700);
+	color: var(--clr-primary);
+}
+
+/* Section Title Para */
+.sectionAbout-title {
+	font-size: var(--fs-400);
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.sectionAbout-para {
+	font-size: var(--fs-300);
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 70.25em) {
+	.sectionAbout-title {
+		font-size: var(--fs-600);
+		line-height: 1.4;
+	}
+
+	.sectionAbout-para {
+		font-size: var(--fs-400);
+	}
+}
+
+/* About Music */
+.about-music a {
+	color: var(--clr-secondary);
+}
+
+/* Making Music */
+span {
+	font-size: var(--fs-200);
+	line-height: 1.5;
+	color: hsla(0, 100%, 0%, 0.8);
+}
+
+/* Exception talent */
+.exceptional-talent__display p,
+.exceptional-talent__display a {
+	font-size: var(--fs-400);
+	line-height: 1.5;
+	font-weight: var(--fw-700);
+	letter-spacing: 0.5px;
+}
+
+.exceptional-talent__display a {
+	color: var(--clr-secondary);
+}
+
+@media screen and (min-width: 40em) {
+	.exceptional-talent__display p,
+	.exceptional-talent__display a {
+		font-size: var(--fs-600);
+		line-height: 1.4;
+	}
+}
+
+/* Footer */
+.primary-footer a {
+	line-height: 1.5;
+	color: hsla(0, 100%, 0%, 0.6);
+}
+
+.footer-logo {
+	width: 122px;
+	& img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.ft-title {
+	line-height: 1.5;
+}
+
+.ft-title,
+.ft-para,
+.ft-link {
+	font-size: var(--fs-300);
+
+	@media screen and (min-width: 80em) {
+		font-size: var(--fs-400);
+	}
+}
+
+select,
+.ft-legal a,
+.ft-left p {
+	font-size: var(--fs-200);
+}
+
+.ft-legal a,
+.ft-right span {
+	color: hsla(0, 100%, 0%, 0.7);
+	font-weight: var(--fw-700);
+}
+
+@media screen and (min-width: 40em) {
+	select,
+	.ft-legal a,
+	.ft-left p {
+		font-size: var(--fs-300);
+	}
+}

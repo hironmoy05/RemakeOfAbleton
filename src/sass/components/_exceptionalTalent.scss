@@ -1,0 +1,50 @@
+.exceptional-talent {
+	margin-bottom: 8.33333vw;
+
+	& .flex {
+		flex-direction: column;
+	}
+
+	&__display {
+		--space: 1em;
+	}
+
+	@media screen and (min-width: 80em) {
+		&__display {
+			& figure {
+				display: flex;
+				flex-direction: row;
+			}
+
+			& figure div {
+				width: 100%;
+			}
+
+			& figure img {
+				height: 100%;
+			}
+
+			& figure figcaption {
+				flex-basis: 100%;
+				height: 41.66666vw;
+				width: 41.66666vw;
+				padding: 8.33333vw;
+				display: flex;
+				justify-content: center;
+			}
+
+			@media screen and (min-width: 100em) {
+				& figure img {
+					width: 666.66667px;
+					height: 666.66667px;
+				}
+
+				& figure figcaption {
+					padding: 133.33333px;
+					width: 666.66667px;
+					height: 666.66667px;
+				}
+			}
+		}
+	}
+}

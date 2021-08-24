@@ -1,0 +1,37 @@
+@media screen and (min-width: 64rem) {
+	.split {
+		display: flex;
+
+		& .col1 {
+			width: 21vw;
+
+			@media screen and (min-width: 100em) {
+				& {
+					width: 30%;
+				}
+			}
+		}
+
+		& .col2 {
+			width: 24.5vw;
+
+			@media screen and (min-width: 100em) {
+				& {
+					width: 30%;
+				}
+			}
+		}
+
+		& .col3 {
+			width: 32vw;
+
+			@media screen and (min-width: 100em) {
+				& {
+					width: 40%;
+				}
+			}
+		}
+
+		gap: 2rem;
+	}
+}

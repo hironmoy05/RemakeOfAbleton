@@ -1,0 +1,40 @@
+.main-nav-more {
+	--space: 1.5625rem;
+	padding: 0.625rem 1.25rem 1.875rem 1.25rem;
+
+	@media screen and (min-width: 80em) {
+		& {
+			--space: 2.625rem;
+			padding: 1.6875rem 2.5rem 3.4375rem 2.5rem;
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.moreOnAbleton,
+.moreFromAbleton {
+	& .nav-list {
+		display: flex;
+
+		& > * + * {
+			margin-left: 1.5rem;
+		}
+	}
+}
+
+.main-nav-more {
+	position: absolute;
+}
+
+@media screen and (min-width: 64em) {
+	.main-nav-more {
+		position: static;
+	}
+
+	.mobileMenu {
+		display: none;
+	}
+}

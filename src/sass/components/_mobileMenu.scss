@@ -1,0 +1,122 @@
+@media screen and (max-width: 64em) {
+	.primary-header__left {
+		position: relative;
+		z-index: 50;
+	}
+
+	/* changing color for menu while click */
+	.makeMenuWhite {
+		color: var(--clr-neutral-100);
+		fill: var(--clr-neutral-100);
+		transition: all 0.5s;
+	}
+
+	/* for changing color of logo while click */
+	.logoMenuColor {
+		filter: invert(42%) sepia(100%) saturate(0%) hue-rotate(15deg)
+			brightness(219%) contrast(119%);
+		transition: all 0.5s;
+	}
+
+	/* To show mobile menu */
+	.mobileMenu--show {
+		top: 0 !important;
+	}
+
+	.mobileMenu {
+		padding-top: 4rem;
+		position: fixed;
+		z-index: 40;
+		top: -70rem;
+		transition: all 0.5s;
+
+		& .navigation__list > * + * {
+			margin-top: 1em;
+		}
+
+		& .navigation__list a {
+			font-weight: var(--fw-700);
+		}
+
+		&,
+		& a,
+		& span,
+		& .tryFree,
+		& .main-nav-more {
+			background: var(--clr-secondary);
+			color: var(--clr-neutral-100);
+		}
+
+		& .main-nav-more {
+			padding-bottom: 0;
+		}
+
+		& .primary-header__right a,
+		& .primary-header__left a {
+			width: 100vw;
+		}
+
+		& .abs,
+		& .primary-header__right {
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+		}
+
+		& .primary-header__right div {
+			display: flex;
+			flex-direction: column;
+
+			& .tryFree {
+				margin-top: 0.8em;
+			}
+			& .loginRegister {
+				margin-top: 1em;
+			}
+		}
+
+		& .moreOnAbleton {
+			margin-top: 0.625rem;
+
+			& .nav-list {
+				flex-direction: column;
+
+				& > * + * {
+					margin-left: 0;
+				}
+			}
+		}
+
+		& .moreFromAbleton {
+			overflow-x: auto;
+			width: 92vw;
+			margin-top: 0.625rem;
+
+			@media screen and (min-width: 31.25em) {
+				& {
+					width: 94vw;
+				}
+			}
+			@media screen and (min-width: 41.875em) {
+				& {
+					width: 95vw;
+				}
+			}
+
+			& a {
+				font-size: var(--fs-100);
+			}
+
+			& .nav-item a {
+				font-size: 1rem;
+			}
+
+			& h3 {
+				font-size: var(--fs-400);
+			}
+		}
+
+		& .moreFromAbleton .nav-list .nav-item {
+			min-width: 11em;
+		}
+	}
+}

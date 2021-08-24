@@ -1,0 +1,22 @@
+.hero__logo {
+  background: url("../images/header.jpg");
+  height: 85vh;
+  background-size: cover;
+  background-position: top center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  & .ableton-logo {
+    width: 12rem;
+  }
+
+  @media screen and (min-width: 40em) {
+    & .ableton-logo {
+      width: 24rem;
+    }
+  }
+}

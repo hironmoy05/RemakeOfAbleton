@@ -1,0 +1,8 @@
+.flow-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.flow-content > * + * {
+  margin: var(--space, 0.7em) 0 0 0;
+}

@@ -1,0 +1,16 @@
+.flex {
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 40rem) {
+		& {
+			flex-direction: column;
+		}
+	}
+
+	@media screen and (min-width: 64rem) {
+		& {
+			flex-direction: row;
+		}
+	}
+}

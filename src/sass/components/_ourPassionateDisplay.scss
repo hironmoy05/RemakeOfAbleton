@@ -1,0 +1,42 @@
+.our-passionate__display {
+	& .img-left img {
+		width: 33.33333vw;
+		height: 25vw;
+	}
+
+	& .img-right img {
+		width: 41.66667vw;
+		height: 41.66667vw;
+		margin-left: 16.66667vw;
+	}
+
+	& .img-left--opposite {
+		order: 1;
+	}
+
+	& .img-right--opposite img {
+		margin-left: 0;
+	}
+
+	@media screen and (min-width: 100em) {
+		& .img-left img {
+			width: 533.33333px;
+			height: 400px;
+			margin-left: 133.33333px;
+		}
+
+		& .img-right img {
+			width: 666.66667px;
+			height: 666.66667px;
+			margin-left: 133.33333px;
+		}
+
+		& .img-left--opposite img {
+			margin-left: 266.66667px;
+		}
+
+		& .img-right--opposite img {
+			margin-left: 133.33333px;
+		}
+	}
+}

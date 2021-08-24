@@ -1,0 +1,23 @@
+:root {
+	--clr-primary: hsl(14, 100%, 65%);
+	--clr-secondary: hsl(240, 100%, 50%);
+	--clr-tertiary: hsl(63, 100%, 83%);
+	--clr-quaternary: hsl(128, 100%, 86%);
+	--clr-quinary: hsl(267, 100%, 85%);
+	--clr-senary: hsl(225, 100%, 85%);
+
+	--clr-neutral-100: hsl(0, 0%, 100%);
+	--clr-neutral-200: hsl(0, 0%, 95%);
+	--clr-neutral-300: hsl(0, 0%, 0%);
+
+	--ff-futuraPt: 'Futura PT', sans-serif;
+
+	--fw-500: 500;
+	--fw-700: 700;
+
+	--fs-200: 0.875rem; // 14px
+	--fs-300: 1rem; // 16px
+	--fs-400: 1.25rem; // 20px
+	--fs-500: 1.625rem; // 26px
+	--fs-600: 1.875rem; // 30px
+}
